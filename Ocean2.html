@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form" id="registration-form" action="https://script.google.com/macros/s/AKfycbzAhoL89uoRLLzMWT2N_uB87nGLiyvbiv1-zxvdqAKJDAyTWyqDOO8xkHh7Vj0DaKEHYQ/exec" method="post">
+            <h1>Registration Form</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="cdc">CDC</label>
+            <input type="text" id="cdc" name="cdc" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="blood-type">Blood Type</label>
+            <select id="blood-type" name="blood-type" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="arrival-departure">Arrival or Departure</label>
+            <select id="arrival-departure" name="arrival-departure" required>
+                <option value="Arrival">Arrival</option>
+                <option value="Departure">Departure</option>
+            </select>
+
+            <label for="arrival-departure-date">Date</label>
+            <input type="date" id="arrival-departure-date" name="arrival-departure-date" required>
+
+            <label for="contact-no">Contact No</label>
+            <input type="tel" id="contact-no" name="contact-no" required>
+
+            <div class="button-row">
+                <button type="button" id="back-button">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

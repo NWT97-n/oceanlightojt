@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrival or Departure Date</title>
+    <link rel="stylesheet" href="Ocean3.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form" id="registration-form" action="https://script.google.com/macros/s/AKfycbxDw30A8J_wBBQ-SD9QnzridTY84g1tq6WmbhDsRlYQOJwwSI2uriS8RCKPXHw9kwFm/exec" method="post">
+            <h1>Arrival or Departure Date</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="cdc">CDC</label>
+            <input type="text" id="cdc" name="cdc" required>
+
+            <label for="arrival-departure">Arrival or Departure</label>
+            <select id="arrival-departure" name="arrival-departure" required>
+                <option value="Arrival">Arrival</option>
+                <option value="Departure">Departure</option>
+            </select>
+
+            <label for="arrival-departure-date">Date</label>
+            <input type="date" id="arrival-departure-date" name="arrival-departure-date" required>
+
+            <div class="button-row">
+                <button type="button" id="back-button">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="Ocean3.js"></script>
+</body>
+</html>
